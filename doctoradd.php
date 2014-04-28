@@ -26,17 +26,20 @@ if(isset($_POST['Send'])):
 <p><a href="doctoradd.php">Add more information</a></p>
 <p><a href="doctorlist.php">Return to information list</a></p>
 <?php
-	else:
+else:
 ?>
+
+
 <form action="doctoradd.php" method = "post">
 <p>Enter information: <br />
-<p>S num: 
+<p>S num: <span style="display:inline-block; width: 94;"></span>
 	<input type = "text" name = "Dnum" size = "20" maxlength = "255" />
-<p>Doctor ID:
+<p>Doctor ID: <span style="display:inline-block; width: 70;"></span>
 	<input type = "text" name = "DID" size = "20" maxlength = "255" />
-<p>Doctor name:
+<p>Doctor name: <span style="display:inline-block; width: 54;"></span>
+    
  	<input type = "text" name = "Dname" size = "20" maxlength = "255" />
-<p>Doctor specializations:  
+<p>Doctor specializations: <span style="display:inline-block; width: 3;"></span>
  	<input type = "text" name = "Dspec" size = "20" maxlength = "255" />
   <br />
 <input type = "submit" name = "Send" value = "SEND" /></p>  

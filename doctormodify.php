@@ -22,21 +22,28 @@ if(isset($_POST['Send'])):
 	}
 ?>
 <p><a href="doctorlist.php">Return to information list</a></p>
+
 <?php
 else:
-$id = $_GET['id'];
-
+{
+    $id = $_GET['id'];
+    //$Dname = $_GET['Dname'];
+}
 ?>
+
 <form action="doctormodify.php" method = "post">
 <p>Enter information: <br />
-<p>Doctor ID:
+<p>Doctor ID: <span style="display:inline-block; width: 70;"></span>
 	<input type = "text" name = "DID" size = "20" maxlength = "255" />
-<p>Doctor name:
+    <br />
+<p>Doctor name: <span style="display:inline-block; width: 54;"></span>
  	<input type = "text" name = "Dname" size = "20" maxlength = "255" />
-	<br />
-<p>Doctor specializations:  
+    <br />
+<p>Doctor specializations:  <span style="display:inline-block; width: 3;"></span>
  	<input type = "text" name = "Dspec" size = "20" maxlength = "255" />
   	<br />
+    
+
 <p><input type = "hidden" name = "id" value = "<?=$id?>">
 	<br />
 <input type = "submit" name = "Send" value = "SEND" /></p>  
